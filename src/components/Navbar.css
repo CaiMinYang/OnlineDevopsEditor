@@ -1,0 +1,170 @@
+.navbar {
+  background-color: #060b26;
+  display: flex;
+  justify-content: start;
+  WIDTH:34PX;
+  position: relative;
+}
+.commitCode{
+  position: absolute;
+  top:1.7em;
+  left:.1em;
+  font-size:1.6rem;
+  cursor:pointer; 
+}
+.Files{
+  color:white;
+}
+.menu-bars {
+  font-size: 2rem;
+  background: none;
+  
+}
+.menu-button {
+  font-size: 1.4rem;
+  left:.2em;
+  top:.3em;
+  background: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+.nav-menu {
+  background-color: #060b26;
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  Z-INDEX:99;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.folder{
+  overflow: hidden;
+  padding-left:15px;
+  cursor:pointer;
+  max-height:30px;
+  transition: .3s;
+}
+.folderHead{
+  line-height:30px;
+  height:30px;
+  position:relative;
+  transition:.2s;
+  text-indent:20px;
+}
+.folderHead:hover{
+  color:grey
+}
+.symbol{
+  position:absolute;
+  left:-18px;
+  top:7px;
+  width:18px;
+  height:18px;
+  background-image:url("../assets/arrowRight.png");
+  background-size:100% 100%;
+  transition: .1S;
+}
+.folderHead::after{
+  position:absolute;
+  width:15px;
+  height:15px;
+  left:0;
+  top:9px;
+  background-image:url("../assets/folder.png");
+  background-size:100% 100%;
+  content: "";
+}
+
+.Files{
+  margin:14px 0 0 10px;
+  list-style: none;
+}
+.file{
+  position:relative;
+  height:30px;
+  line-height:30px;
+  text-indent: 20px;
+  transition: .2s;
+  cursor: pointer
+}
+.file:hover{
+  color:grey;
+}
+.file::before{
+  position:absolute;
+  left:-1px;
+  top:6.5px;
+  width:18px;
+  height:18px;
+  background-image:url("../assets/file.png");
+  background-size:100% 100%;
+  content: "";
+}
+.nav-text a:hover {
+  background-color: #1a83ff;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #060b26;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-text span {
+  margin-left: 16px;
+}
+
+.cloneInput{
+  border-radius:.3em 0 0 .3em;
+  margin:1em 0.1em 1em 1em;
+  height: 2em;
+
+}
+.cloneButton{
+  background-color:rgb(45,158,75);
+  border-radius:0 .3em .3em 0;
+  height: 2em;
+  width: 4.2em;
+  font-weight:bold;
+  color:white;
+  cursor:pointer;
+}
